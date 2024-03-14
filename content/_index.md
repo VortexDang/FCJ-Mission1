@@ -17,5 +17,5 @@ In this workshop, you will deep into the essentials of transferring data from Am
 1. [Introduction to DataSync](1-introduce/)
 2. [Preparation Steps](2-prerequiste/)
 3. [Creating DataSync Location](3-createdatasynclocation/)
-4. [Create & S DataSync Task](4--createdatasynctask/)
+4. [Create & DataSync Task](4--createdatasynctask/)
 5. [Resource Cleanup](5-cleanup/)
