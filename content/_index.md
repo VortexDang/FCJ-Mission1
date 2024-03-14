@@ -10,7 +10,6 @@ chapter : false
 #### Overview
 
 In this workshop, you will deep into the essentials of transferring data from Amazon S3 to Amazon S3 across AWS accounts
-![VPC](../images/1-Introduce/datasync.png?featherlight=false&width=10pc)
 
 #### Content
 
