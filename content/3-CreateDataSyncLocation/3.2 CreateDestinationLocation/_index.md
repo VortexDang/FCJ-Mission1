@@ -43,4 +43,7 @@ aws datasync create-location-s3 \
 ``` 
 10. Verify the new location by going to the Data transfer section and clicking on Locations in the DataSync console. If the location is in a different region, remember to switch to the correct one from the console.
 
+**For example**:
+   ![destination-location](/images/1-Introduce/destination-location.jpg?featherlight=false&width=90pc)
+
 

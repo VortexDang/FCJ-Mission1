@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.123.7">
@@ -12,21 +12,21 @@
     <title>Create &amp; Start DataSync Task :: Start with Amazon VPC and AWS VPN Site-to-Site.</title>
 
     
-    <link href="../css/nucleus.css?1710391118" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1710391118" rel="stylesheet">
-    <link href="../css/hybrid.css?1710391118" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1710391118" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1710391118" rel="stylesheet">
-    <link href="../css/auto-complete.css?1710391118" rel="stylesheet">
-    <link href="../css/atom-one-dark-reasonable.css?1710391118" rel="stylesheet">
-    <link href="../css/theme.css?1710391118" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1710391118" rel="stylesheet">
+    <link href="../css/nucleus.css?1710412395" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1710412395" rel="stylesheet">
+    <link href="../css/hybrid.css?1710412395" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1710412395" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1710412395" rel="stylesheet">
+    <link href="../css/auto-complete.css?1710412395" rel="stylesheet">
+    <link href="../css/atom-one-dark-reasonable.css?1710412395" rel="stylesheet">
+    <link href="../css/theme.css?1710412395" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1710412395" rel="stylesheet">
     
-    <link href="../css/theme-workshop.css?1710391118" rel="stylesheet">
+    <link href="../css/theme-workshop.css?1710412395" rel="stylesheet">
     
     
 
-    <script src="../js/jquery-3.3.1.min.js?1710391118"></script>
+    <script src="../js/jquery-3.3.1.min.js?1710412395"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1710391118"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1710391118"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1710412395"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1710412395"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/";
+        var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="../js/search.js?1710391118"></script>
+<script type="text/javascript" src="../js/search.js?1710412395"></script>
 
     
   </div>
@@ -342,7 +342,7 @@
         
         ">
       <a href="../4--createdatasynctask/">
-           <b> 3. </b> Create &amp; Start DataSync Task
+           <b> 4. </b> Create &amp; Start DataSync Task
           
             <i class="fas fa-check read-icon"></i>
           
@@ -362,13 +362,13 @@
  
   
     
-    <li data-nav-id="/6-cleanup/" title="Clean up resources" class="dd-item 
+    <li data-nav-id="/5-cleanup/" title="Cleanup Resource" class="dd-item 
         
         
         
         ">
-      <a href="../6-cleanup/">
-           <b> 6. </b> Clean up resources
+      <a href="../5-cleanup/">
+           <b> 5. </b> Cleanup Resource
           
             <i class="fas fa-check read-icon"></i>
           
@@ -419,7 +419,7 @@
                   
                     
                     
-                      <option id="en" value="/4--createdatasynctask/" selected>English</option>
+                      <option id="en" value="//localhost:1313/4--createdatasynctask/" selected>English</option>
                     
                   
               
@@ -559,7 +559,8 @@
 <p><strong>Initiate Task Creation</strong>:</p>
 <ul>
 <li>Expand <strong>Data transfer</strong> in the left navigation pane.</li>
-<li>Choose <strong>Tasks</strong>, then <strong>Create task</strong>.</li>
+<li>Choose <strong>Tasks</strong>, then <strong>Create task</strong>.
+<img alt="task" src="../images/1-Introduce/task-1.jpg?featherlight=false&width=90pc"></li>
 </ul>
 </li>
 <li>
@@ -574,7 +575,8 @@
 <ul>
 <li>Choose <strong>Choose an existing location</strong>.</li>
 <li>If applicable, select the correct Region where the source bucket resides from the <strong>Region dropdown</strong>.</li>
-<li>Select your previously configured source location from <strong>Existing locations</strong>, then click <strong>Next</strong>.</li>
+<li>Select your previously configured source location from <strong>Existing locations</strong>, then click <strong>Next</strong>.
+<img alt="task" src="../images/1-Introduce/task-2.jpg?featherlight=false&width=90pc"></li>
 </ul>
 </li>
 <li>
@@ -612,6 +614,8 @@
 </ul>
 </li>
 </ol>
+<p><img alt="task" src="../images/1-Introduce/task-3.jpg?featherlight=false&width=90pc">
+<img alt="task" src="../images/1-Introduce/task-4.jpg?featherlight=false&width=90pc"></p>
 <h3 id="verifying-the-data-transfer">Verifying the Data Transfer</h3>
 <p>After the task completes, verify the transfer by checking the destination S3 bucket in your destination account. The data from your source account&rsquo;s S3 bucket should now be present, signifying a successful cross-account migration.</p>
 
@@ -834,7 +838,7 @@
 			<a class="nav nav-prev" href="../3-createdatasynclocation/3.2-createdestinationlocation/" title="Create Destination Location"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../6-cleanup/" title="Clean up resources" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../5-cleanup/" title="Cleanup Resource" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -844,19 +848,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1710391118"></script>
-    <script src="../js/perfect-scrollbar.min.js?1710391118"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1710391118"></script>
-    <script src="../js/jquery.sticky.js?1710391118"></script>
-    <script src="../js/featherlight.min.js?1710391118"></script>
-    <script src="../js/highlight.pack.js?1710391118"></script>
+    <script src="../js/clipboard.min.js?1710412395"></script>
+    <script src="../js/perfect-scrollbar.min.js?1710412395"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1710412395"></script>
+    <script src="../js/jquery.sticky.js?1710412395"></script>
+    <script src="../js/featherlight.min.js?1710412395"></script>
+    <script src="../js/highlight.pack.js?1710412395"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom-3.6.0.js?1710391118"></script>
-    <script src="../js/learn.js?1710391118"></script>
-    <script src="../js/hugo-learn.js?1710391118"></script>
+    <script src="../js/modernizr.custom-3.6.0.js?1710412395"></script>
+    <script src="../js/learn.js?1710412395"></script>
+    <script src="../js/hugo-learn.js?1710412395"></script>
 
-    <link href="../mermaid/mermaid.css?1710391118" rel="stylesheet" />
-    <script src="../mermaid/mermaid.js?1710391118"></script>
+    <link href="../mermaid/mermaid.css?1710412395" rel="stylesheet" />
+    <script src="../mermaid/mermaid.js?1710412395"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

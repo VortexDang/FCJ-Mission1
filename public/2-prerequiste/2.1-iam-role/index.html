@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="js csstransforms3d">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Hugo 0.123.7">
@@ -12,21 +12,21 @@
     <title>Create an IAM Role :: Start with Amazon VPC and AWS VPN Site-to-Site.</title>
 
     
-    <link href="../../css/nucleus.css?1710391118" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1710391118" rel="stylesheet">
-    <link href="../../css/hybrid.css?1710391118" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1710391118" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1710391118" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1710391118" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1710391118" rel="stylesheet">
-    <link href="../../css/theme.css?1710391118" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1710391118" rel="stylesheet">
+    <link href="../../css/nucleus.css?1710412395" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1710412395" rel="stylesheet">
+    <link href="../../css/hybrid.css?1710412395" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1710412395" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1710412395" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1710412395" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1710412395" rel="stylesheet">
+    <link href="../../css/theme.css?1710412395" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1710412395" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1710391118" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1710412395" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1710391118"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1710412395"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1710391118"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1710391118"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1710412395"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1710412395"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/";
+        var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1710391118"></script>
+<script type="text/javascript" src="../../js/search.js?1710412395"></script>
 
     
   </div>
@@ -342,7 +342,7 @@
         
         ">
       <a href="../../4--createdatasynctask/">
-           <b> 3. </b> Create &amp; Start DataSync Task
+           <b> 4. </b> Create &amp; Start DataSync Task
           
             <i class="fas fa-check read-icon"></i>
           
@@ -362,13 +362,13 @@
  
   
     
-    <li data-nav-id="/6-cleanup/" title="Clean up resources" class="dd-item 
+    <li data-nav-id="/5-cleanup/" title="Cleanup Resource" class="dd-item 
         
         
         
         ">
-      <a href="../../6-cleanup/">
-           <b> 6. </b> Clean up resources
+      <a href="../../5-cleanup/">
+           <b> 5. </b> Cleanup Resource
           
             <i class="fas fa-check read-icon"></i>
           
@@ -419,7 +419,7 @@
                   
                     
                     
-                      <option id="en" value="/2-prerequiste/2.1-iam-role/" selected>English</option>
+                      <option id="en" value="//localhost:1313/2-prerequiste/2.1-iam-role/" selected>English</option>
                     
                   
               
@@ -563,19 +563,28 @@
 <li>Log in to the AWS Management Console with your source account credentials.</li>
 <li>Navigate to the IAM console at <a href="https://console.aws.amazon.com/iam/">https://console.aws.amazon.com/iam/</a>.</li>
 <li>In the left navigation pane, under <strong>Access management</strong>, select <strong>Roles</strong>, then click <strong>Create role</strong>.</li>
-<li>On the <strong>Select trusted entity</strong> page, set <strong>Trusted entity type</strong> to <strong>AWS service</strong>.</li>
+<li>On the <strong>Select trusted entity</strong> page, set <strong>Trusted entity type</strong> to <strong>AWS service</strong>.
+<img alt="iam-role" src="../../images/1-Introduce/iam-1.jpg?featherlight=false&width=90pc"></li>
 <li>For <strong>Use case</strong>, choose <strong>DataSync</strong> from the dropdown list, then click <strong>Next</strong>.</li>
-<li>Skip the <strong>Add permissions</strong> step by clicking <strong>Next</strong>.</li>
-<li>Provide a name for your role and click <strong>Create role</strong>.</li>
+<li>Skip the <strong>Add permissions</strong> step by clicking <strong>Next</strong>.
+<img alt="iam-role" src="../../images/1-Introduce/iam-2.jpg?featherlight=false&width=90pc"></li>
+<li>Provide a name for your role and click <strong>Create role</strong>.
+<img alt="iam-role" src="../../images/1-Introduce/iam-3.jpg?featherlight=false&width=90pc"></li>
 </ol>
 <p>For detailed instructions, refer to <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html">Creating a role for an AWS service (console)</a> in the IAM User Guide.</p>
 <h3 id="attaching-a-custom-policy-to-the-iam-role">Attaching a Custom Policy to the IAM Role</h3>
 <p>The IAM role needs a policy that permits DataSync to write to the destination S3 bucket.</p>
 <h4 id="to-attach-a-custom-policy-to-your-iam-role">To Attach a Custom Policy to Your IAM Role:</h4>
 <ol>
-<li>On the <strong>Roles</strong> page of the IAM console, find the role you just created and select its name.</li>
-<li>On the role&rsquo;s detail page, go to the <strong>Permissions</strong> tab. Click <strong>Add permissions</strong> then <strong>Create inline policy</strong>.</li>
-<li>Go to the <strong>JSON</strong> tab and perform the following:
+<li>
+<p>On the <strong>Roles</strong> page of the IAM console, find the role you just created and select its name.</p>
+</li>
+<li>
+<p>On the role&rsquo;s detail page, go to the <strong>Permissions</strong> tab. Click <strong>Add permissions</strong> then <strong>Create inline policy</strong>.
+<img alt="iam-role" src="../../images/1-Introduce/iam-4.jpg?featherlight=false&width=90pc"></p>
+</li>
+<li>
+<p>Go to the <strong>JSON</strong> tab and perform the following:</p>
 <ul>
 <li>Paste the JSON policy below into the policy editor:</li>
 </ul>
@@ -608,7 +617,9 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  ]
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Note</strong>: Replace destination-bucket with the actual name of the S3 bucket in your destination account.</p>
+</span></span></code></pre></div><p><strong>Note</strong>: Replace destination-bucket with the actual name of the S3 bucket in your destination account.
+<strong>For example</strong>:
+<img alt="iam-role" src="../../images/1-Introduce/iam-5.jpg?featherlight=false&width=90pc"></p>
 
 
 
@@ -840,19 +851,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1710391118"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1710391118"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1710391118"></script>
-    <script src="../../js/jquery.sticky.js?1710391118"></script>
-    <script src="../../js/featherlight.min.js?1710391118"></script>
-    <script src="../../js/highlight.pack.js?1710391118"></script>
+    <script src="../../js/clipboard.min.js?1710412395"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1710412395"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1710412395"></script>
+    <script src="../../js/jquery.sticky.js?1710412395"></script>
+    <script src="../../js/featherlight.min.js?1710412395"></script>
+    <script src="../../js/highlight.pack.js?1710412395"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1710391118"></script>
-    <script src="../../js/learn.js?1710391118"></script>
-    <script src="../../js/hugo-learn.js?1710391118"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1710412395"></script>
+    <script src="../../js/learn.js?1710412395"></script>
+    <script src="../../js/hugo-learn.js?1710412395"></script>
 
-    <link href="../../mermaid/mermaid.css?1710391118" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1710391118"></script>
+    <link href="../../mermaid/mermaid.css?1710412395" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1710412395"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

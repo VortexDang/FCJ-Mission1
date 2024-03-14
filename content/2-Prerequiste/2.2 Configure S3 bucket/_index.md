@@ -20,6 +20,8 @@ Ownership control is vital for maintaining data security standards. Follow these
 7. If not already done, select the option for **ACLs disabled (recommended)**.
 8. Confirm the change by clicking **Save changes**.
 
+   ![s3-configure](/images/1-Introduce/s3-configure-1.jpg?featherlight=false&width=90pc)
+
 Disabling ACLs ensures that all transferred data is owned by the destination account, aligning with best practices for data security. For further details, visit the [Controlling ownership of objects and disabling ACLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html) section in the Amazon S3 User Guide.
 
 ### Configure Your S3 Bucket Policy

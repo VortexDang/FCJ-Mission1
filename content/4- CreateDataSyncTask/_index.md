@@ -3,7 +3,7 @@ title : "Create & Start DataSync Task"
 date : "`r Sys.Date()`"
 weight : 5
 chapter : false
-pre : " <b> 3. </b> "
+pre : " <b> 4. </b> "
 ---
 
 With the preparatory steps completed, including IAM role creation and configuring both source and destination S3 bucket locations, you're now ready to create and start the DataSync transfer task to move your data across AWS accounts.
@@ -15,6 +15,8 @@ With the preparatory steps completed, including IAM role creation and configurin
 2. **Initiate Task Creation**:
     - Expand **Data transfer** in the left navigation pane.
     - Choose **Tasks**, then **Create task**.
+![task](/images/1-Introduce/task-1.jpg?featherlight=false&width=90pc)
+
 
 3. **Select the Task Region**:
     - If your destination bucket resides in a different AWS Region than your source bucket, select the appropriate Region for the destination bucket in the top navigation pane.
@@ -24,6 +26,8 @@ With the preparatory steps completed, including IAM role creation and configurin
     - Choose **Choose an existing location**.
     - If applicable, select the correct Region where the source bucket resides from the **Region dropdown**.
     - Select your previously configured source location from **Existing locations**, then click **Next**.
+![task](/images/1-Introduce/task-2.jpg?featherlight=false&width=90pc)
+
 
 5. **Configure Destination Location**:
     - Select **Choose an existing location**.
@@ -43,6 +47,9 @@ With the preparatory steps completed, including IAM role creation and configurin
     - Decide on starting the task with defaults or customizing the start options:
         - **Start with defaults** for a standard transfer.
         - **Start with overriding options** if adjustments are needed before execution.
+
+![task](/images/1-Introduce/task-3.jpg?featherlight=false&width=90pc)
+![task](/images/1-Introduce/task-4.jpg?featherlight=false&width=90pc)
 
 ### Verifying the Data Transfer
 

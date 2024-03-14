@@ -28,6 +28,8 @@ Creating a source location involves specifying the S3 bucket that serves as the 
 
 6. **Review and Create**: Once you have filled in the necessary information, review your settings to ensure everything is correct. Click **Create location** to finalize the creation of your source location.
 
+   ![source-location](/images/1-Introduce/source-location.jpg?featherlight=false&width=90pc)
+
 ### Verification
 
 After creating the source location, you will see it listed in the **Locations** section of the AWS DataSync console. Ensure that the location status is available, indicating that DataSync can access the S3 bucket and is ready to start transferring data.

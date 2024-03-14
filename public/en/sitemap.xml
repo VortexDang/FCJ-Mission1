@@ -2,80 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/1-introduce/aws-datasync-for-cross-account-s3-migrations/</loc>
+    <loc>//localhost:1313/1-introduce/aws-datasync-for-cross-account-s3-migrations/</loc>
   </url><url>
-    <loc>/2-prerequiste/2.1-iam-role/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.1-iam-role/</loc>
   </url><url>
-    <loc>/3-createdatasynclocation/3.1-createsourcelocation/</loc>
+    <loc>//localhost:1313/3-createdatasynclocation/3.1-createsourcelocation/</loc>
   </url><url>
-    <loc>/</loc>
+    <loc>//localhost:1313/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/"
                 />
   </url><url>
-    <loc>/1-introduce/</loc>
+    <loc>//localhost:1313/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="//localhost:1313/vi/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="//localhost:1313/1-introduce/"
                 />
   </url><url>
-    <loc>/2-prerequiste/2.2-configure-s3-bucket/</loc>
+    <loc>//localhost:1313/2-prerequiste/2.2-configure-s3-bucket/</loc>
   </url><url>
-    <loc>/3-createdatasynclocation/3.2-createdestinationlocation/</loc>
+    <loc>//localhost:1313/3-createdatasynclocation/3.2-createdestinationlocation/</loc>
   </url><url>
-    <loc>/2-prerequiste/</loc>
+    <loc>//localhost:1313/2-prerequiste/</loc>
   </url><url>
-    <loc>/3-createdatasynclocation/</loc>
+    <loc>//localhost:1313/3-createdatasynclocation/</loc>
   </url><url>
-    <loc>/4--createdatasynctask/</loc>
+    <loc>//localhost:1313/4--createdatasynctask/</loc>
   </url><url>
-    <loc>/6-cleanup/</loc>
+    <loc>//localhost:1313/5-cleanup/</loc>
+  </url><url>
+    <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-cleanup/"
+                href="//localhost:1313/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-cleanup/"
+                href="//localhost:1313/categories/"
                 />
   </url><url>
-    <loc>/categories/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
-                />
-  </url><url>
-    <loc>/tags/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="/vi/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/tags/"
                 />
   </url>
 </urlset>
